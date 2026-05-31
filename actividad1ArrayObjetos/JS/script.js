@@ -20,10 +20,6 @@ Mostrar empleados y netos de aquellos que superen los $ 1200 de netos
 Mostrar empleados que superen los 6 años de antigüedad
 Buscar un empleado por su nombre y desplegar su liquidación. De no existir mostrar un mensaje
 */
-
-//const { createElement } = require("react");
-
-////////////////////intento de crear elementos desde js
 let tbody = document.getElementById('tbody');
 
 for(let i = 0; i < 10; i++){
@@ -153,7 +149,7 @@ function agregarAlArray(){
         }
         if(nom==""||cat==""){
             console.log("no hay datos que mostrar");
-            //alert("no hay datos que ingresar")
+            //alert("no hay datos que mostrar")
             break;
         }
         else {
@@ -211,13 +207,4 @@ document.getElementById('agregar').addEventListener('click', function(){
         console.log("La tabla ya esta completa");
     }
     else{agregarAlArray();}
-})//agregarAlArray)
-
-
-/*
-let tabla=document.createElement('table')
-tabla.id=`tuViejaEnTanga`;
-let input=document.createElement('input');
-input.type=`text`;
-document.getElementById('contenedor').appendChild(tabla)
-document.getElementById('contenedor').appendChild(input)/ */
+})
