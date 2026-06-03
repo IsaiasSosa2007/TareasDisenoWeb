@@ -122,11 +122,15 @@ function agregarAlArray(){
         let obraSoc=bruto*(3/100);
         let prem=0;
         if(ant>17){
-            prem=100;
+            prem=100.02;
         }
         let neto= bruto+prem-jubil-sind-obraSoc;
 
-        const truncarDosDecimales = num => Math.floor(num * 100) / 100;
+        function truncarDosDecimales(numero){
+            numero=numero*100;
+            numero=Math.floor(numero);
+            return numero/100;
+        }
         
         jubil   = truncarDosDecimales(jubil);
         sind    = truncarDosDecimales(sind);
