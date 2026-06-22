@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(214, 205, 142);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 150px;
+}
+label {
+  font-size: 1.5em;
+}
+input {
+  min-width: 150px;
+  max-width: 300px;
+  height: 5vh;
+}
+button {
+  min-width: 50px;
+  width: 5vw;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#inMostrarDe {
+  width: 30%;
+}
+th {
+  width: 10%;
+  padding: 5px;
+}
+td {
+  text-align: center;
+}
+#tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+#tabla th,
+#tabla td {
+  border: 2px solid #dddddd;
+  text-align: left;
+}
+#tabla th {
+  background-color: #009879;
+  color: #ffffff;
+}

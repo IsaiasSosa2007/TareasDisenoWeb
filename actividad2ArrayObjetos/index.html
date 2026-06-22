@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+    <title>act2</title>
+  </head>
+  <body>
+    <!--Se deben ingresar los siguiente datos por cada presupuesto:
+Vehículo, nombre y apellido del cliente y precio de lista del automotor (puede repetirse el vehículo y el cliente en distintas operaciones)
+
+Se deberá mostrar:
+Todos los vehículo presupuestados a un determinado cliente (éste dato es ingresado desde un formulario)
+Aquellos Vehículos cuyo precio de lista sea superior a un valor que usted considere-->
+    <div class="contenedor">
+      <datalist id="vehiculos">
+        <option value="Chevrolet Corsa City">Chevrolet Corsa City</option>
+        <option value="Citroen C4">Citroen C4</option>
+        <option value="Fiat Pali Weekend">Fiat Pali Weekend</option>
+        <option value="Fiat Siena">Fiat Siena</option>
+        <option value="Fort Explorer XLT 4X4">Fort Explorer XLT 4X4</option>
+        <option value="Fort Ranget XLT 4X4">Fort Ranget XLT 4X4</option>
+        <option value="Peugeot 306">Peugeot 306</option>
+        <option value="Renault Laguna">Renault Laguna</option>
+        <option value="Suzuki Fun">Suzuki Fun</option>
+        <option value="Volswagen gol">Volswagen gol</option>
+        <option value="Volswagen Suran">Volswagen Suran</option>
+      </datalist>
+      <datalist id="clientes"></datalist>
+      <form action="" id="form">
+        <!--ingresa vehiculo selecciona desde la lista-->
+        <label for="inVehiculo">Vehiculo:</label>
+        <input list="vehiculos" type="text" id="inVehiculo" /><br />
+
+        <!--ingresa nombre y apellido-->
+        <label for="inCliente">Nombre y Apellido:</label>
+        <input type="text" id="inCliente" /><br />
+
+        <!--ingresa precio-->
+        <label for="inPrecio">Precio:</label>
+        <input type="number" id="inPrecio" /><br />
+      </form>
+
+      <!--ingresa los datos del formulario-->
+      <button id="botonIngresar">Ingresar</button>
+
+      <!--ingresa el nombre del cliente del que se va a mostrar los datos-->
+      <label for="mostrarDe">Mostrar valores de:</label>
+      <input list="clientes" type="text" id="inMostrarDe" />
+      <button id="mostrarDeterminado">Mostrar</button>
+      <div id="divTabla"></div>
+
+      <div id="masCarosQue"></div>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
